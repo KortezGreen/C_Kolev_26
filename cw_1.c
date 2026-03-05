@@ -250,22 +250,101 @@ int main()
 
 
 //1.4.1
-
+//int n,m,a;
+//printf("Podaj 2 dodatnie liczby calkowite: ");
+//scanf("%d" "%d", &n,&m);
+//while (n<m)
+//{
+//    printf("Wynik: %d\n", n);
+//    n = 2+n;
+//}
+//if(n>m || n==m);
+//{
+//        printf("Brak innych wielokrotnosci!");
+//}
 
 //1.4.2
-
+//int n,m,a;
+//printf("Podaj 2 dodatnie liczby calkowite: ");
+//scanf("%d" "%d", &n,&m);
+//while (0<m)
+//{
+//    printf("Wynik: %d\n", n);
+//    n = 2+n;
+//    m=m-1;
+//}
 
 //1.4.3
-
+//int n,m,k;
+//printf("Podaj 3 dodatnie liczby calkowite: ");
+//scanf("%d" "%d" "%d", &n,&m,&k);
+//int start = (m / n + 1) * n;
+//int znaleziono = 0;
+//
+//for (int i = start; i < k; i += n)
+//{
+//        printf("%d\n", i);
+//        znaleziono = 1;
+//}
+//
+//if (!znaleziono)
+//{
+//        printf("Brak wielokrotnosci w podanym zakresie.\n");
+//}
 
 //1.4.4
-
+//int n,a;
+//printf("Podaj nieujemna liczbe calkowita n: ");
+//scanf("%d", &n);
+//a=n-1;
+//if(0==n)
+//{
+//    printf("Wynik: 1");
+//}
+//while (0<a)
+//{
+//    n = n*a;
+//    a=a-1;
+//if(0>a||a==0)
+//{
+//    printf("Wynik: %d\n", n);
+//}
+//}
 
 //1.4.5
-
+//int n,a,w;
+//printf("Podaj nieujemna liczbe calkowita n: ");
+//scanf("%d", &n);
+//if(n<0)
+//{
+//    printf("Wynik nie istnieje!");
+//}
+//else
+//{
+//    w=0;
+//while (0==n||n>0)
+//{
+//    a = n*n;
+//    w=w+a;
+//    n=n-1;
+//}
+//printf("Wynik: %d",w);
+//}
 
 //1.4.6
+int n,a,w;
+printf("Podaj liczbe calkowita n>2: ");
+scanf("%d", &n);
+if(n/2==0)
+{
+    w=
+printf("Wynik: %d",w);
+}
+else
+{
 
+printf("Wynik: %d",w);
+}
 
 //1.4.7
 
