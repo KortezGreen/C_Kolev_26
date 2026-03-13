@@ -332,44 +332,31 @@ int main()
 //}
 
 //1.4.6
-int n,a,w;
-printf("Podaj liczbe calkowita n>2: ");
-scanf("%d", &n);
-if(n/2==0)
-{
-    w=
-printf("Wynik: %d",w);
-}
-else
-{
-
-printf("Wynik: %d",w);
-}
+//int n;
+//long long suma = 0;
+//printf("Podaj liczbe n: ");
+//if (scanf("%d", &n) != 1 || n < 0)
+//{
+//    return 1;
+//}
+//for (int i = 0; i <= n; i++)
+//{
+//    suma += (long long)i * i;
+//}
+//printf("%lld\n", suma);
 
 //1.4.7
-
-
-//1.4.8
-
-
-//1.4.9
-
-
-//1.4.10
-
-
-//1.4.11
-
-
-//1.4.12
-
-
-//1.4.13
-
-
-//1.4.14
-
-
+//int n, m;
+//long long iloczyn = 1;
+//if (scanf("%d %d", &n, &m) != 2)
+//{
+//    return 1;
+//}
+//    for (int i = n; i <= m; i++)
+//{
+//    iloczyn *= i;
+//}
+//printf("%lld\n", iloczyn);
 
     return 0;
 }
