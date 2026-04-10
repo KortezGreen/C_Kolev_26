@@ -1,0 +1,72 @@
+#include <stdio.h>
+
+double pierwiastek(double x) {
+    double g = x / 2.0;
+    double prev;
+
+    if (x <= 0) return 0;
+
+    do {
+        prev = g;
+        g = (g + x / g) / 2.0;
+    } while ((g - prev > 0.000001) || (prev - g > 0.000001));
+
+    return g;
+}
+
+int main() {
+    double a, b, delta, x1, x2;
+
+    scanf("%lf %lf", &a, &b);
+
+    delta = b*b - 4*2*a*4;
+
+    if (delta < 0) {
+        printf("Brak rozwiazan\n");
+    } else if (delta == 0) {
+        x1 = -b / (2*2*a);
+        printf("x = %.2lf\n", x1);
+    } else {
+        double sqrt_delta = pierwiastek(delta);
+        x1 = (-b - sqrt_delta) / (2*2*a);
+        x2 = (-b + sqrt_delta) / (2*2*a);
+        printf("x1 = %.2lf x2 = %.2lf\n", x1, x2);
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+
+void wypisz(int t[], int n) {
+    int i, j, count;
+
+    for (i = 0; i < n; i++) {
+        count = 0;
+        for (j = 0; j < n; j++) {
+            if (t[i] == t[j]) count++;
+        }
+
+        int juz = 0;
+        for (j = 0; j < i; j++) {
+            if (t[i] == t[j]) {
+                juz = 1;
+                break;
+            }
+        }
+
+        if (count > 1 && !juz) {
+            printf("%d ", t[i]);
+        }
+    }
+}
+
+int main() {
+    int t[10], i;
+
+    for (i = 0; i < 10; i++) scanf("%d", &t[i]);
+
+    wypisz(t, 10);
+
+    return 0;
+}
